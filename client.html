@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Employees Project</title>
+    
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js"></script>
+    <script src="control.js"></script>
+</head>
+<body  onLoad="document.FormInsert.reset() , document.FormSearch.reset() , document.FormDelete.reset() ">
+<div id="titolo"><h1>Employees DataBase</h1></div>
+
+<form action="http://127.0.0.1:1337/search" method='post' name="FormSearch">
+<div id="search">
+<p id="search_empl"><h3>Search Employee</h3> 
+<p>
+<b>ID: </b><input type="text" name="search_id" value="" id="id_search">
+<input type="submit" id="search_button" value="Search">
+</p></div></form>
+<form action="http://127.0.0.1:1337/delete" method='post' name="FormDelete">
+<div id ="delete">
+<p id="search_empl"><h3>Delete Employee</h3>
+<p>
+<b>ID: </b><input type="text" name="delete_id" value="" id="id_delete">
+<input type="submit" id="delete_button" value="Delete">
+</p>
+</div>
+</form>
+<br>
+<form method='post' name="FormInsert">
+<div id ="inserisci">
+
+<input type="button" id="insert_button" value="Insert new Employee" onclick="insertButton()">
+<p><div id="id_id" style="display:none;"><b>ID:</b><input name="id" type="text" id="insert_id" value="" ></div>
+<p><div id="id_name" style="display:none;"><b>Name:</b><input name="name" type="text" id="insert_name" value="" ></div>
+<p><div id="id_surname" style="display:none;"><b>Surname:</b><input name ="surname" type="text" id="insert_surname" value="" ></div>
+<p><div id="id_level" style="display:none;"><b>Level:</b><input type="text" name="level" id="insert_level" value="" ></div>
+<p><div id="id_salary" style="display:none;"><b>Salary:</b><input type="text" name="salary" id="insert_salary" value="" ></div>
+<p><div id="id_upload" style="display:none;"><input type="button" id="button_upload" value="Upload" OnClick="Controllo()"></div>
+ 
+</div>
+</form>
+</body>
+
+</html>
