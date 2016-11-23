@@ -1,0 +1,25 @@
+{
+  "name": "se2_16_173462_l4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bind": "^0.1.7",
+    "express": "^4.14.0",
+    "http": "0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohamedDounnani/SE2_16_173462_L4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohamedDounnani/SE2_16_173462_L4/issues"
+  },
+  "homepage": "https://github.com/MohamedDounnani/SE2_16_173462_L4#readme"
+}
